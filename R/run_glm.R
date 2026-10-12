@@ -34,8 +34,8 @@ run_glm <- function(sim_folder = ".", nml_file = "glm4.nml", verbose = TRUE,
 
   ### UNIX
   if(.Platform$pkgType == "source"){
-    stop("Currently UNIX is not supported by ", getPackageName())
-    # return(run_glmNIX(sim_folder, verbose, system.args))
+    # stop("Currently UNIX is not supported by ", getPackageName())
+    return(run_glmNIX(sim_folder, verbose, system.args))
   }
 
   ### macOS ###
